@@ -1,0 +1,52 @@
+{
+    "docker": {
+        "services": [
+            {
+                "service": "lazylibrarian-docker",
+                "image": "ghcr.io/linuxserver/lazylibrarian",
+                "container_name": "sonarr-docker",
+                "tag": "latest",
+                "restart": "always",
+                "environment": [
+                    {
+                        "env_var": "PUID",
+                        "env_value": "1024"
+                    },
+                    {
+                        "env_var": "PGID",
+                        "env_value": "100"
+                    },
+                    {
+                        "env_var": "TZ",
+                        "env_value": "Europe/Amsterdam"
+                    },
+                    {
+                        "env_var": "DOCKER_MODS",
+                        "env_value": "linuxserver/calibre-web:calibre|linuxserver/mods:lazylibrarian-ffmpeg"
+                    }
+            ],
+                "shares": [
+                    {
+                        "host_dir": "/config",
+                        "mount_point": "/config"
+                    },
+                    {
+                        "host_dir": "/downloads",
+                        "mount_point": "/downloads"
+                    },
+                    {
+                        "host_dir": "/books",
+                        "mount_point": "/books"
+                    }
+                ],
+                "ports": [
+                    {
+                        "host_port": "5299",
+                        "container_port": "5299",
+                        "protocol": "tcp"
+                    }
+                ]
+            }
+        ]
+    }
+}

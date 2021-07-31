@@ -1,0 +1,53 @@
+{
+    "docker": {
+        "services": [
+            {
+                "service": "pydio-cells-docker",
+                "image": "ghcr.io/linuxserver/pydio-cells",
+                "container_name": "sonarr-docker",
+                "tag": "latest",
+                "restart": "always",
+                "environment": [
+                    {
+                        "env_var": "PUID",
+                        "env_value": "1024"
+                    },
+                    {
+                        "env_var": "PGID",
+                        "env_value": "100"
+                    },
+                    {
+                        "env_var": "TZ",
+                        "env_value": "Europe/Amsterdam"
+                    },
+                    {
+                        "env_var": "EXTERNALURL",
+                        "env_value": "yourdomain.url"
+                    },
+                    {
+                        "env_var": "SERVER_IP",
+                        "env_value": "0.0.0.0"
+                    }
+            ],
+                "shares": [
+                    {
+                        "host_dir": "/config",
+                        "mount_point": "/config"
+                    }
+                ],
+                "ports": [
+                    {
+                        "host_port": "8080",
+                        "container_port": "8080",
+                        "protocol": "tcp"
+                    },
+                    {
+                        "host_port": "33060",
+                        "container_port": "33060",
+                        "protocol": "tcp"
+                    }
+                ]
+            }
+        ]
+    }
+}

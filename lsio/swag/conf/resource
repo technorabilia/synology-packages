@@ -1,0 +1,93 @@
+{
+    "docker": {
+        "services": [
+            {
+                "service": "swag-docker",
+                "image": "ghcr.io/linuxserver/swag",
+                "container_name": "sonarr-docker",
+                "tag": "latest",
+                "restart": "always",
+                "environment": [
+                    {
+                        "env_var": "PUID",
+                        "env_value": "1024"
+                    },
+                    {
+                        "env_var": "PGID",
+                        "env_value": "100"
+                    },
+                    {
+                        "env_var": "TZ",
+                        "env_value": "Europe/Amsterdam"
+                    },
+                    {
+                        "env_var": "URL",
+                        "env_value": "yourdomain.url"
+                    },
+                    {
+                        "env_var": "SUBDOMAINS",
+                        "env_value": "www,"
+                    },
+                    {
+                        "env_var": "VALIDATION",
+                        "env_value": "http"
+                    },
+                    {
+                        "env_var": "CERTPROVIDER",
+                        "env_value": ""
+                    },
+                    {
+                        "env_var": "DNSPLUGIN",
+                        "env_value": "cloudflare"
+                    },
+                    {
+                        "env_var": "PROPAGATION",
+                        "env_value": ""
+                    },
+                    {
+                        "env_var": "DUCKDNSTOKEN",
+                        "env_value": ""
+                    },
+                    {
+                        "env_var": "EMAIL",
+                        "env_value": ""
+                    },
+                    {
+                        "env_var": "ONLY_SUBDOMAINS",
+                        "env_value": "false"
+                    },
+                    {
+                        "env_var": "EXTRA_DOMAINS",
+                        "env_value": ""
+                    },
+                    {
+                        "env_var": "STAGING",
+                        "env_value": "false"
+                    },
+                    {
+                        "env_var": "MAXMINDDB_LICENSE_KEY",
+                        "env_value": ""
+                    }
+            ],
+                "shares": [
+                    {
+                        "host_dir": "/config",
+                        "mount_point": "/config"
+                    }
+                ],
+                "ports": [
+                    {
+                        "host_port": "443",
+                        "container_port": "443",
+                        "protocol": "tcp"
+                    },
+                    {
+                        "host_port": "80",
+                        "container_port": "80",
+                        "protocol": "tcp"
+                    }
+                ]
+            }
+        ]
+    }
+}

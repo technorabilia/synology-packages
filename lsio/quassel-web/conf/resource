@@ -1,0 +1,48 @@
+{
+    "docker": {
+        "services": [
+            {
+                "service": "quassel-web-docker",
+                "image": "ghcr.io/linuxserver/quassel-web",
+                "container_name": "sonarr-docker",
+                "tag": "latest",
+                "restart": "always",
+                "environment": [
+                    {
+                        "env_var": "PUID",
+                        "env_value": "1024"
+                    },
+                    {
+                        "env_var": "PGID",
+                        "env_value": "100"
+                    },
+                    {
+                        "env_var": "QUASSEL_CORE",
+                        "env_value": "192.168.1.10"
+                    },
+                    {
+                        "env_var": "QUASSEL_PORT",
+                        "env_value": "4242"
+                    },
+                    {
+                        "env_var": "URL_BASE",
+                        "env_value": "/quassel"
+                    }
+            ],
+                "shares": [
+                    {
+                        "host_dir": "/config",
+                        "mount_point": "/config"
+                    }
+                ],
+                "ports": [
+                    {
+                        "host_port": "64080",
+                        "container_port": "64080",
+                        "protocol": "tcp"
+                    }
+                ]
+            }
+        ]
+    }
+}

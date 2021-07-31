@@ -1,0 +1,78 @@
+{
+    "docker": {
+        "services": [
+            {
+                "service": "transmission-docker",
+                "image": "ghcr.io/linuxserver/transmission",
+                "container_name": "sonarr-docker",
+                "tag": "latest",
+                "restart": "always",
+                "environment": [
+                    {
+                        "env_var": "PUID",
+                        "env_value": "1024"
+                    },
+                    {
+                        "env_var": "PGID",
+                        "env_value": "100"
+                    },
+                    {
+                        "env_var": "TZ",
+                        "env_value": "Europe/Amsterdam"
+                    },
+                    {
+                        "env_var": "TRANSMISSION_WEB_HOME",
+                        "env_value": "/combustion-release/"
+                    },
+                    {
+                        "env_var": "USER",
+                        "env_value": "username"
+                    },
+                    {
+                        "env_var": "PASS",
+                        "env_value": "password"
+                    },
+                    {
+                        "env_var": "WHITELIST",
+                        "env_value": "iplist"
+                    },
+                    {
+                        "env_var": "HOST_WHITELIST",
+                        "env_value": "dnsnane list"
+                    }
+            ],
+                "shares": [
+                    {
+                        "host_dir": "/config",
+                        "mount_point": "/config"
+                    },
+                    {
+                        "host_dir": "/downloads",
+                        "mount_point": "/downloads"
+                    },
+                    {
+                        "host_dir": "/watch",
+                        "mount_point": "/watch"
+                    }
+                ],
+                "ports": [
+                    {
+                        "host_port": "9091",
+                        "container_port": "9091",
+                        "protocol": "tcp"
+                    },
+                    {
+                        "host_port": "51413",
+                        "container_port": "51413",
+                        "protocol": "tcp"
+                    },
+                    {
+                        "host_port": "51413",
+                        "container_port": "51413/udp",
+                        "protocol": "udp"
+                    }
+                ]
+            }
+        ]
+    }
+}

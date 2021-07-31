@@ -1,0 +1,20 @@
+{
+    "docker": {
+        "services": [
+            {
+                "service": "guacd-docker",
+                "image": "ghcr.io/linuxserver/guacd",
+                "container_name": "sonarr-docker",
+                "tag": "latest",
+                "restart": "always",
+                "ports": [
+                    {
+                        "host_port": "4822",
+                        "container_port": "4822",
+                        "protocol": "tcp"
+                    }
+                ]
+            }
+        ]
+    }
+}

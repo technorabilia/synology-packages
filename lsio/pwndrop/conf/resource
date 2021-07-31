@@ -1,0 +1,44 @@
+{
+    "docker": {
+        "services": [
+            {
+                "service": "pwndrop-docker",
+                "image": "ghcr.io/linuxserver/pwndrop",
+                "container_name": "sonarr-docker",
+                "tag": "latest",
+                "restart": "always",
+                "environment": [
+                    {
+                        "env_var": "PUID",
+                        "env_value": "1024"
+                    },
+                    {
+                        "env_var": "PGID",
+                        "env_value": "100"
+                    },
+                    {
+                        "env_var": "TZ",
+                        "env_value": "Europe/Amsterdam"
+                    },
+                    {
+                        "env_var": "SECRET_PATH",
+                        "env_value": "/pwndrop"
+                    }
+            ],
+                "shares": [
+                    {
+                        "host_dir": "/config",
+                        "mount_point": "/config"
+                    }
+                ],
+                "ports": [
+                    {
+                        "host_port": "8080",
+                        "container_port": "8080",
+                        "protocol": "tcp"
+                    }
+                ]
+            }
+        ]
+    }
+}

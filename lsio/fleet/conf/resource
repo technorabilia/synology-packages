@@ -1,0 +1,56 @@
+{
+    "docker": {
+        "services": [
+            {
+                "service": "fleet-docker",
+                "image": "ghcr.io/linuxserver/fleet",
+                "container_name": "sonarr-docker",
+                "tag": "latest",
+                "restart": "always",
+                "environment": [
+                    {
+                        "env_var": "PUID",
+                        "env_value": "1024"
+                    },
+                    {
+                        "env_var": "PGID",
+                        "env_value": "100"
+                    },
+                    {
+                        "env_var": "fleet_admin_authentication_type",
+                        "env_value": "DATABASE"
+                    },
+                    {
+                        "env_var": "fleet_database_url",
+                        "env_value": "jdbc:mariadb://<url>:3306/fleet"
+                    },
+                    {
+                        "env_var": "fleet_database_username",
+                        "env_value": "fleet_user"
+                    },
+                    {
+                        "env_var": "fleet_database_password",
+                        "env_value": "dbuserpassword"
+                    },
+                    {
+                        "env_var": "fleet_admin_secret",
+                        "env_value": "randomstring"
+                    }
+            ],
+                "shares": [
+                    {
+                        "host_dir": "/config",
+                        "mount_point": "/config"
+                    }
+                ],
+                "ports": [
+                    {
+                        "host_port": "8080",
+                        "container_port": "8080",
+                        "protocol": "tcp"
+                    }
+                ]
+            }
+        ]
+    }
+}

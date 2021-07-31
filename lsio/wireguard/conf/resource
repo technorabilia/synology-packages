@@ -1,0 +1,68 @@
+{
+    "docker": {
+        "services": [
+            {
+                "service": "wireguard-docker",
+                "image": "ghcr.io/linuxserver/wireguard",
+                "container_name": "sonarr-docker",
+                "tag": "latest",
+                "restart": "always",
+                "environment": [
+                    {
+                        "env_var": "PUID",
+                        "env_value": "1024"
+                    },
+                    {
+                        "env_var": "PGID",
+                        "env_value": "100"
+                    },
+                    {
+                        "env_var": "TZ",
+                        "env_value": "Europe/Amsterdam"
+                    },
+                    {
+                        "env_var": "SERVERURL",
+                        "env_value": "wireguard.domain.com"
+                    },
+                    {
+                        "env_var": "SERVERPORT",
+                        "env_value": "51820"
+                    },
+                    {
+                        "env_var": "PEERS",
+                        "env_value": "1"
+                    },
+                    {
+                        "env_var": "PEERDNS",
+                        "env_value": "auto"
+                    },
+                    {
+                        "env_var": "INTERNAL_SUBNET",
+                        "env_value": "10.13.13.0"
+                    },
+                    {
+                        "env_var": "ALLOWEDIPS",
+                        "env_value": "0.0.0.0/0"
+                    }
+            ],
+                "shares": [
+                    {
+                        "host_dir": "/config",
+                        "mount_point": "/config"
+                    },
+                    {
+                        "host_dir": "/lib/modules",
+                        "mount_point": "/lib/modules"
+                    }
+                ],
+                "ports": [
+                    {
+                        "host_port": "51820",
+                        "container_port": "51820/udp",
+                        "protocol": "udp"
+                    }
+                ]
+            }
+        ]
+    }
+}

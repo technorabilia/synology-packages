@@ -1,0 +1,45 @@
+{
+    "docker": {
+        "services": [
+            {
+                "service": "plex-docker",
+                "image": "ghcr.io/linuxserver/plex",
+                "container_name": "sonarr-docker",
+                "tag": "latest",
+                "restart": "always",
+                "environment": [
+                    {
+                        "env_var": "PUID",
+                        "env_value": "1024"
+                    },
+                    {
+                        "env_var": "PGID",
+                        "env_value": "100"
+                    },
+                    {
+                        "env_var": "VERSION",
+                        "env_value": "docker"
+                    },
+                    {
+                        "env_var": "PLEX_CLAIM",
+                        "env_value": ""
+                    }
+            ],
+                "shares": [
+                    {
+                        "host_dir": "/config",
+                        "mount_point": "/config"
+                    },
+                    {
+                        "host_dir": "/tv",
+                        "mount_point": "/tv"
+                    },
+                    {
+                        "host_dir": "/movies",
+                        "mount_point": "/movies"
+                    }
+                ],
+            }
+        ]
+    }
+}

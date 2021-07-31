@@ -1,0 +1,53 @@
+{
+    "docker": {
+        "services": [
+            {
+                "service": "calibre-docker",
+                "image": "ghcr.io/linuxserver/calibre",
+                "container_name": "sonarr-docker",
+                "tag": "latest",
+                "restart": "always",
+                "environment": [
+                    {
+                        "env_var": "PUID",
+                        "env_value": "1024"
+                    },
+                    {
+                        "env_var": "PGID",
+                        "env_value": "100"
+                    },
+                    {
+                        "env_var": "TZ",
+                        "env_value": "Europe/Amsterdam"
+                    },
+                    {
+                        "env_var": "PASSWORD",
+                        "env_value": ""
+                    },
+                    {
+                        "env_var": "CLI_ARGS",
+                        "env_value": ""
+                    }
+            ],
+                "shares": [
+                    {
+                        "host_dir": "/config",
+                        "mount_point": "/config"
+                    }
+                ],
+                "ports": [
+                    {
+                        "host_port": "8080",
+                        "container_port": "8080",
+                        "protocol": "tcp"
+                    },
+                    {
+                        "host_port": "8081",
+                        "container_port": "8081",
+                        "protocol": "tcp"
+                    }
+                ]
+            }
+        ]
+    }
+}

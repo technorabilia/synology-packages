@@ -1,0 +1,71 @@
+{
+    "docker": {
+        "services": [
+            {
+                "service": "jellyfin-docker",
+                "image": "ghcr.io/linuxserver/jellyfin",
+                "container_name": "sonarr-docker",
+                "tag": "latest",
+                "restart": "always",
+                "environment": [
+                    {
+                        "env_var": "PUID",
+                        "env_value": "1024"
+                    },
+                    {
+                        "env_var": "PGID",
+                        "env_value": "100"
+                    },
+                    {
+                        "env_var": "TZ",
+                        "env_value": "Europe/Amsterdam"
+                    },
+                    {
+                        "env_var": "JELLYFIN_PublishedServerUrl",
+                        "env_value": "192.168.0.5"
+                    }
+            ],
+                "shares": [
+                    {
+                        "host_dir": "/config",
+                        "mount_point": "/config"
+                    },
+                    {
+                        "host_dir": "/data/tvshows",
+                        "mount_point": "/data/tvshows"
+                    },
+                    {
+                        "host_dir": "/data/movies",
+                        "mount_point": "/data/movies"
+                    },
+                    {
+                        "host_dir": "/opt/vc/lib",
+                        "mount_point": "/opt/vc/lib"
+                    }
+                ],
+                "ports": [
+                    {
+                        "host_port": "8096",
+                        "container_port": "8096",
+                        "protocol": "tcp"
+                    },
+                    {
+                        "host_port": "8920",
+                        "container_port": "8920",
+                        "protocol": "tcp"
+                    },
+                    {
+                        "host_port": "7359",
+                        "container_port": "7359/udp",
+                        "protocol": "udp"
+                    },
+                    {
+                        "host_port": "1900",
+                        "container_port": "1900/udp",
+                        "protocol": "udp"
+                    }
+                ]
+            }
+        ]
+    }
+}

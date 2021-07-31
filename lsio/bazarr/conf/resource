@@ -1,0 +1,48 @@
+{
+    "docker": {
+        "services": [
+            {
+                "service": "bazarr-docker",
+                "image": "ghcr.io/linuxserver/bazarr",
+                "container_name": "sonarr-docker",
+                "tag": "latest",
+                "restart": "always",
+                "environment": [
+                    {
+                        "env_var": "PUID",
+                        "env_value": "1024"
+                    },
+                    {
+                        "env_var": "PGID",
+                        "env_value": "100"
+                    },
+                    {
+                        "env_var": "TZ",
+                        "env_value": "Europe/Amsterdam"
+                    }
+            ],
+                "shares": [
+                    {
+                        "host_dir": "/config",
+                        "mount_point": "/config"
+                    },
+                    {
+                        "host_dir": "/movies",
+                        "mount_point": "/movies"
+                    },
+                    {
+                        "host_dir": "/tv",
+                        "mount_point": "/tv"
+                    }
+                ],
+                "ports": [
+                    {
+                        "host_port": "6767",
+                        "container_port": "6767",
+                        "protocol": "tcp"
+                    }
+                ]
+            }
+        ]
+    }
+}
