@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "pydio-cells-docker",
+    "groupname": "pydio-cells-docker"
+}

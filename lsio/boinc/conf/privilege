@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "boinc-docker",
+    "groupname": "boinc-docker"
+}

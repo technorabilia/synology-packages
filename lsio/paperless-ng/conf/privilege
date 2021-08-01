@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "paperless-ng-docker",
+    "groupname": "paperless-ng-docker"
+}

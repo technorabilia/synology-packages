@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "nzbget-docker",
+    "groupname": "nzbget-docker"
+}

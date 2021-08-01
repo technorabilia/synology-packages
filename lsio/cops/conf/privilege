@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "cops-docker",
+    "groupname": "cops-docker"
+}

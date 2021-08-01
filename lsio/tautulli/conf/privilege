@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "tautulli-docker",
+    "groupname": "tautulli-docker"
+}

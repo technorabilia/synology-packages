@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "rdesktop-docker",
+    "groupname": "rdesktop-docker"
+}

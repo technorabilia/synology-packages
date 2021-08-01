@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "ldap-auth-docker",
+    "groupname": "ldap-auth-docker"
+}

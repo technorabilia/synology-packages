@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "xbackbone-docker",
+    "groupname": "xbackbone-docker"
+}

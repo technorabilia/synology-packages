@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "snapdrop-docker",
+    "groupname": "snapdrop-docker"
+}

@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "pyload-docker",
+    "groupname": "pyload-docker"
+}

@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "piwigo-docker",
+    "groupname": "piwigo-docker"
+}

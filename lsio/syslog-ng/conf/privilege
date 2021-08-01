@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "syslog-ng-docker",
+    "groupname": "syslog-ng-docker"
+}

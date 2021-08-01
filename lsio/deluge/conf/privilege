@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "deluge-docker",
+    "groupname": "deluge-docker"
+}

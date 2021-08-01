@@ -1,0 +1,60 @@
+{
+    "docker": {
+        "services": [
+            {
+                "service": "lychee-docker",
+                "image": "ghcr.io/linuxserver/lychee",
+                "container_name": "sonarr-docker",
+                "tag": "latest",
+                "restart": "always",
+                "environment": [
+                    {
+                        "env_var": "PUID",
+                        "env_value": "1024"
+                    },
+                    {
+                        "env_var": "PGID",
+                        "env_value": "100"
+                    },
+                    {
+                        "env_var": "TZ",
+                        "env_value": "Europe/Amsterdam"
+                    },
+                    {
+                        "env_var": "DB_HOST",
+                        "env_value": "mariadb"
+                    },
+                    {
+                        "env_var": "DB_USERNAME",
+                        "env_value": "lychee"
+                    },
+                    {
+                        "env_var": "DB_PASSWORD",
+                        "env_value": "dbpassword"
+                    },
+                    {
+                        "env_var": "DB_DATABASE",
+                        "env_value": "lychee"
+                    }
+                ],
+                "shares": [
+                    {
+                        "host_dir": "config",
+                        "mount_point": "/config"
+                    },
+                    {
+                        "host_dir": "pictures",
+                        "mount_point": "/pictures"
+                    }
+                ],
+                "ports": [
+                    {
+                        "host_port": "80",
+                        "container_port": "80",
+                        "protocol": "tcp"
+                    }
+                ]
+            }
+        ]
+    }
+}

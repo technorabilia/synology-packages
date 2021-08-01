@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "pwndrop-docker",
+    "groupname": "pwndrop-docker"
+}

@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "pidgin-docker",
+    "groupname": "pidgin-docker"
+}

@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "ddclient-docker",
+    "groupname": "ddclient-docker"
+}

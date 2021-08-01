@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "code-server-docker",
+    "groupname": "code-server-docker"
+}

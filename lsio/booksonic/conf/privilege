@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "booksonic-docker",
+    "groupname": "booksonic-docker"
+}

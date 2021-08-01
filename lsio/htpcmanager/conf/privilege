@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "htpcmanager-docker",
+    "groupname": "htpcmanager-docker"
+}

@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "plex-docker",
+    "groupname": "plex-docker"
+}

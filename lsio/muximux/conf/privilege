@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "muximux-docker",
+    "groupname": "muximux-docker"
+}

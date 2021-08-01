@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "resilio-sync-docker",
+    "groupname": "resilio-sync-docker"
+}

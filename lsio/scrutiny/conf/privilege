@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "scrutiny-docker",
+    "groupname": "scrutiny-docker"
+}

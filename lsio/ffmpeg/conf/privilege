@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "ffmpeg-docker",
+    "groupname": "ffmpeg-docker"
+}

@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "apprise-api-docker",
+    "groupname": "apprise-api-docker"
+}

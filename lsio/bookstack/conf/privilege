@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "bookstack-docker",
+    "groupname": "bookstack-docker"
+}

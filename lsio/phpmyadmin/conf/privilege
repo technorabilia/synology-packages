@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "phpmyadmin-docker",
+    "groupname": "phpmyadmin-docker"
+}

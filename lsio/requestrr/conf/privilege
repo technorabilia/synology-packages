@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "requestrr-docker",
+    "groupname": "requestrr-docker"
+}

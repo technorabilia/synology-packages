@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "emby-docker",
+    "groupname": "emby-docker"
+}

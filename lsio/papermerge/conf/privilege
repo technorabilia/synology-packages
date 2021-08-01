@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "papermerge-docker",
+    "groupname": "papermerge-docker"
+}

@@ -1,0 +1,53 @@
+{
+    "docker": {
+        "services": [
+            {
+                "service": "tvheadend-docker",
+                "image": "ghcr.io/linuxserver/tvheadend",
+                "container_name": "sonarr-docker",
+                "tag": "latest",
+                "restart": "always",
+                "environment": [
+                    {
+                        "env_var": "PUID",
+                        "env_value": "1024"
+                    },
+                    {
+                        "env_var": "PGID",
+                        "env_value": "100"
+                    },
+                    {
+                        "env_var": "TZ",
+                        "env_value": "Europe/Amsterdam"
+                    },
+                    {
+                        "env_var": "RUN_OPTS",
+                        "env_value": "<run options here>"
+                    }
+                ],
+                "shares": [
+                    {
+                        "host_dir": "config",
+                        "mount_point": "/config"
+                    },
+                    {
+                        "host_dir": "recordings",
+                        "mount_point": "/recordings"
+                    }
+                ],
+                "ports": [
+                    {
+                        "host_port": "9981",
+                        "container_port": "9981",
+                        "protocol": "tcp"
+                    },
+                    {
+                        "host_port": "9982",
+                        "container_port": "9982",
+                        "protocol": "tcp"
+                    }
+                ]
+            }
+        ]
+    }
+}

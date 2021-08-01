@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "nzbhydra2-docker",
+    "groupname": "nzbhydra2-docker"
+}

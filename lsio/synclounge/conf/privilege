@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "synclounge-docker",
+    "groupname": "synclounge-docker"
+}

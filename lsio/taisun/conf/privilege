@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "taisun-docker",
+    "groupname": "taisun-docker"
+}

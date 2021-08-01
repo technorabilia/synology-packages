@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "homeassistant-docker",
+    "groupname": "homeassistant-docker"
+}

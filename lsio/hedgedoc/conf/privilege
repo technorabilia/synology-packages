@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "hedgedoc-docker",
+    "groupname": "hedgedoc-docker"
+}

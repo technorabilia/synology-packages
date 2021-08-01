@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "swag-docker",
+    "groupname": "swag-docker"
+}

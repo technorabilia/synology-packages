@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "mylar3-docker",
+    "groupname": "mylar3-docker"
+}

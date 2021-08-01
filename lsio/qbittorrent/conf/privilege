@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "qbittorrent-docker",
+    "groupname": "qbittorrent-docker"
+}

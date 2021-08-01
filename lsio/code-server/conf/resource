@@ -1,0 +1,60 @@
+{
+    "docker": {
+        "services": [
+            {
+                "service": "code-server-docker",
+                "image": "ghcr.io/linuxserver/code-server",
+                "container_name": "sonarr-docker",
+                "tag": "latest",
+                "restart": "always",
+                "environment": [
+                    {
+                        "env_var": "PUID",
+                        "env_value": "1024"
+                    },
+                    {
+                        "env_var": "PGID",
+                        "env_value": "100"
+                    },
+                    {
+                        "env_var": "TZ",
+                        "env_value": "Europe/Amsterdam"
+                    },
+                    {
+                        "env_var": "PASSWORD",
+                        "env_value": "password"
+                    },
+                    {
+                        "env_var": "HASHED_PASSWORD",
+                        "env_value": ""
+                    },
+                    {
+                        "env_var": "SUDO_PASSWORD",
+                        "env_value": "password"
+                    },
+                    {
+                        "env_var": "SUDO_PASSWORD_HASH",
+                        "env_value": ""
+                    },
+                    {
+                        "env_var": "PROXY_DOMAIN",
+                        "env_value": "code-server.my.domain"
+                    }
+                ],
+                "shares": [
+                    {
+                        "host_dir": "config",
+                        "mount_point": "/config"
+                    }
+                ],
+                "ports": [
+                    {
+                        "host_port": "8443",
+                        "container_port": "8443",
+                        "protocol": "tcp"
+                    }
+                ]
+            }
+        ]
+    }
+}

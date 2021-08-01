@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "booksonic-air-docker",
+    "groupname": "booksonic-air-docker"
+}

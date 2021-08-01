@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "fleet-docker",
+    "groupname": "fleet-docker"
+}

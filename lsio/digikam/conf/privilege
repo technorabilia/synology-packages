@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "digikam-docker",
+    "groupname": "digikam-docker"
+}

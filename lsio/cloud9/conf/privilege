@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "cloud9-docker",
+    "groupname": "cloud9-docker"
+}

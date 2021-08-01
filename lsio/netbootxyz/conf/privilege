@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "netbootxyz-docker",
+    "groupname": "netbootxyz-docker"
+}

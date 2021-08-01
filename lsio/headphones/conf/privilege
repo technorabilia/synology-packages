@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "headphones-docker",
+    "groupname": "headphones-docker"
+}

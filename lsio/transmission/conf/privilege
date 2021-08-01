@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "transmission-docker",
+    "groupname": "transmission-docker"
+}

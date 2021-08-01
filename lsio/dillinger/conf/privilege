@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "dillinger-docker",
+    "groupname": "dillinger-docker"
+}

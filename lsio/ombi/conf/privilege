@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "ombi-docker",
+    "groupname": "ombi-docker"
+}

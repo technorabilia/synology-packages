@@ -1,0 +1,56 @@
+{
+    "docker": {
+        "services": [
+            {
+                "service": "bookstack-docker",
+                "image": "ghcr.io/linuxserver/bookstack",
+                "container_name": "sonarr-docker",
+                "tag": "latest",
+                "restart": "always",
+                "environment": [
+                    {
+                        "env_var": "PUID",
+                        "env_value": "1024"
+                    },
+                    {
+                        "env_var": "PGID",
+                        "env_value": "100"
+                    },
+                    {
+                        "env_var": "APP_URL",
+                        "env_value": ""
+                    },
+                    {
+                        "env_var": "DB_HOST",
+                        "env_value": "<yourdbhost>"
+                    },
+                    {
+                        "env_var": "DB_USER",
+                        "env_value": "<yourdbuser>"
+                    },
+                    {
+                        "env_var": "DB_PASS",
+                        "env_value": "<yourdbpass>"
+                    },
+                    {
+                        "env_var": "DB_DATABASE",
+                        "env_value": "bookstackapp"
+                    }
+                ],
+                "shares": [
+                    {
+                        "host_dir": "config",
+                        "mount_point": "/config"
+                    }
+                ],
+                "ports": [
+                    {
+                        "host_port": "6875",
+                        "container_port": "80",
+                        "protocol": "tcp"
+                    }
+                ]
+            }
+        ]
+    }
+}

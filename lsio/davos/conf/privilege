@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "davos-docker",
+    "groupname": "davos-docker"
+}

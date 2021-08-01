@@ -1,0 +1,53 @@
+{
+    "docker": {
+        "services": [
+            {
+                "service": "resilio-sync-docker",
+                "image": "ghcr.io/linuxserver/resilio-sync",
+                "container_name": "sonarr-docker",
+                "tag": "latest",
+                "restart": "always",
+                "environment": [
+                    {
+                        "env_var": "PUID",
+                        "env_value": "1024"
+                    },
+                    {
+                        "env_var": "PGID",
+                        "env_value": "100"
+                    },
+                    {
+                        "env_var": "TZ",
+                        "env_value": "Europe/Amsterdam"
+                    }
+                ],
+                "shares": [
+                    {
+                        "host_dir": "config",
+                        "mount_point": "/config"
+                    },
+                    {
+                        "host_dir": "downloads",
+                        "mount_point": "/downloads"
+                    },
+                    {
+                        "host_dir": "sync",
+                        "mount_point": "/sync"
+                    }
+                ],
+                "ports": [
+                    {
+                        "host_port": "8888",
+                        "container_port": "8888",
+                        "protocol": "tcp"
+                    },
+                    {
+                        "host_port": "55555",
+                        "container_port": "55555",
+                        "protocol": "tcp"
+                    }
+                ]
+            }
+        ]
+    }
+}

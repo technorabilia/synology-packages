@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "medusa-docker",
+    "groupname": "medusa-docker"
+}

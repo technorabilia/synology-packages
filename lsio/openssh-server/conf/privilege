@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "openssh-server-docker",
+    "groupname": "openssh-server-docker"
+}

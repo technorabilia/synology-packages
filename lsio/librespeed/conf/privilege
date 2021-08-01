@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "librespeed-docker",
+    "groupname": "librespeed-docker"
+}

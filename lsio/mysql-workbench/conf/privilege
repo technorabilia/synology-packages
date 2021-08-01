@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "mysql-workbench-docker",
+    "groupname": "mysql-workbench-docker"
+}

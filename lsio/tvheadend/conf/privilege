@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "tvheadend-docker",
+    "groupname": "tvheadend-docker"
+}

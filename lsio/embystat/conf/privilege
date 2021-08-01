@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "embystat-docker",
+    "groupname": "embystat-docker"
+}

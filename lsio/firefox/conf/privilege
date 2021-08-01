@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "firefox-docker",
+    "groupname": "firefox-docker"
+}

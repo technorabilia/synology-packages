@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "nntp2nntp-docker",
+    "groupname": "nntp2nntp-docker"
+}

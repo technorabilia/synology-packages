@@ -1,0 +1,48 @@
+{
+    "docker": {
+        "services": [
+            {
+                "service": "nntp2nntp-docker",
+                "image": "ghcr.io/linuxserver/nntp2nntp",
+                "container_name": "sonarr-docker",
+                "tag": "latest",
+                "restart": "always",
+                "environment": [
+                    {
+                        "env_var": "PUID",
+                        "env_value": "1024"
+                    },
+                    {
+                        "env_var": "PGID",
+                        "env_value": "100"
+                    },
+                    {
+                        "env_var": "PUID",
+                        "env_value": "<yourUID>"
+                    },
+                    {
+                        "env_var": "PGID",
+                        "env_value": "<yourGID>"
+                    },
+                    {
+                        "env_var": "TZ",
+                        "env_value": "Europe/Amsterdam"
+                    }
+                ],
+                "shares": [
+                    {
+                        "host_dir": "config",
+                        "mount_point": "/config"
+                    }
+                ],
+                "ports": [
+                    {
+                        "host_port": "1563",
+                        "container_port": "1563",
+                        "protocol": "tcp"
+                    }
+                ]
+            }
+        ]
+    }
+}

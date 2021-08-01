@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "dokuwiki-docker",
+    "groupname": "dokuwiki-docker"
+}

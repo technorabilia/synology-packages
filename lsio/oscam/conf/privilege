@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "oscam-docker",
+    "groupname": "oscam-docker"
+}

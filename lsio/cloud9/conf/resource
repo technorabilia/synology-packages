@@ -1,0 +1,60 @@
+{
+    "docker": {
+        "services": [
+            {
+                "service": "cloud9-docker",
+                "image": "ghcr.io/linuxserver/cloud9",
+                "container_name": "sonarr-docker",
+                "tag": "latest",
+                "restart": "always",
+                "environment": [
+                    {
+                        "env_var": "PUID",
+                        "env_value": "1024"
+                    },
+                    {
+                        "env_var": "PGID",
+                        "env_value": "100"
+                    },
+                    {
+                        "env_var": "TZ",
+                        "env_value": "Europe/Amsterdam"
+                    },
+                    {
+                        "env_var": "GITURL",
+                        "env_value": "https://github.com/linuxserver/docker-cloud9.git"
+                    },
+                    {
+                        "env_var": "USERNAME",
+                        "env_value": ""
+                    },
+                    {
+                        "env_var": "PASSWORD",
+                        "env_value": ""
+                    }
+                ],
+                "shares": [
+                    {
+                        "host_dir": "config",
+                        "mount_point": "/config"
+                    },
+                    {
+                        "host_dir": "code",
+                        "mount_point": "/code"
+                    },
+                    {
+                        "host_dir": "var/run/docker.sock",
+                        "mount_point": "/var/run/docker.sock"
+                    }
+                ],
+                "ports": [
+                    {
+                        "host_port": "8000",
+                        "container_port": "8000",
+                        "protocol": "tcp"
+                    }
+                ]
+            }
+        ]
+    }
+}

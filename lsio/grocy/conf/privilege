@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "grocy-docker",
+    "groupname": "grocy-docker"
+}

@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "endlessh-docker",
+    "groupname": "endlessh-docker"
+}

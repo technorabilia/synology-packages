@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "overseerr-docker",
+    "groupname": "overseerr-docker"
+}

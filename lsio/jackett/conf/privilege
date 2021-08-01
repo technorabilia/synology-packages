@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "jackett-docker",
+    "groupname": "jackett-docker"
+}

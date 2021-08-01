@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "sickgear-docker",
+    "groupname": "sickgear-docker"
+}

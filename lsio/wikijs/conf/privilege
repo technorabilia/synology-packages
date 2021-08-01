@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "wikijs-docker",
+    "groupname": "wikijs-docker"
+}

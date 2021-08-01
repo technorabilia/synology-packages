@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "filezilla-docker",
+    "groupname": "filezilla-docker"
+}

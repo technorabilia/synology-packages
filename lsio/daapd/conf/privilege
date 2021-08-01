@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "daapd-docker",
+    "groupname": "daapd-docker"
+}

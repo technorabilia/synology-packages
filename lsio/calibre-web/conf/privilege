@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "calibre-web-docker",
+    "groupname": "calibre-web-docker"
+}

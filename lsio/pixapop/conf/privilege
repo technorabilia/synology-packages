@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "pixapop-docker",
+    "groupname": "pixapop-docker"
+}

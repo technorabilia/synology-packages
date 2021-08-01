@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "nano-docker",
+    "groupname": "nano-docker"
+}

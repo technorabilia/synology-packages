@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "webgrabplus-docker",
+    "groupname": "webgrabplus-docker"
+}

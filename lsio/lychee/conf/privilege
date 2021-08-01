@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "lychee-docker",
+    "groupname": "lychee-docker"
+}

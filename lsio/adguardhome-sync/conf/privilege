@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "adguardhome-sync-docker",
+    "groupname": "adguardhome-sync-docker"
+}

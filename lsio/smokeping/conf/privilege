@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "smokeping-docker",
+    "groupname": "smokeping-docker"
+}

@@ -1,0 +1,78 @@
+{
+    "docker": {
+        "services": [
+            {
+                "service": "nano-docker",
+                "image": "ghcr.io/linuxserver/nano",
+                "container_name": "sonarr-docker",
+                "tag": "latest",
+                "restart": "always",
+                "environment": [
+                    {
+                        "env_var": "PUID",
+                        "env_value": "1024"
+                    },
+                    {
+                        "env_var": "PGID",
+                        "env_value": "100"
+                    },
+                    {
+                        "env_var": "TZ",
+                        "env_value": "Europe/Amsterdam"
+                    },
+                    {
+                        "env_var": "PEER_HOST",
+                        "env_value": "localhost"
+                    },
+                    {
+                        "env_var": "LIVE_GENESIS_PUB",
+                        "env_value": "GENESIS_PUBLIC"
+                    },
+                    {
+                        "env_var": "LIVE_GENESIS_ACCOUNT",
+                        "env_value": "nano_xxxxxx"
+                    },
+                    {
+                        "env_var": "LIVE_GENESIS_WORK",
+                        "env_value": "WORK_FOR_BLOCK"
+                    },
+                    {
+                        "env_var": "LIVE_GENESIS_SIG",
+                        "env_value": "BLOCK_SIGNATURE"
+                    },
+                    {
+                        "env_var": "CLI_OPTIONS",
+                        "env_value": "--config node.enable_voting=true"
+                    },
+                    {
+                        "env_var": "LMDB_BOOTSTRAP_URL",
+                        "env_value": "http://example.com/Nano_64_version_20.7z"
+                    }
+                ],
+                "shares": [
+                    {
+                        "host_dir": "config",
+                        "mount_point": "/config"
+                    }
+                ],
+                "ports": [
+                    {
+                        "host_port": "8075",
+                        "container_port": "8075",
+                        "protocol": "tcp"
+                    },
+                    {
+                        "host_port": "7076",
+                        "container_port": "3000",
+                        "protocol": "tcp"
+                    },
+                    {
+                        "host_port": "7077",
+                        "container_port": "3001",
+                        "protocol": "tcp"
+                    }
+                ]
+            }
+        ]
+    }
+}

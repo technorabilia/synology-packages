@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "raneto-docker",
+    "groupname": "raneto-docker"
+}

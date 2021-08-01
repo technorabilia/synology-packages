@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "snipe-it-docker",
+    "groupname": "snipe-it-docker"
+}

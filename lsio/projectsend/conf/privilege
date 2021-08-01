@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "projectsend-docker",
+    "groupname": "projectsend-docker"
+}

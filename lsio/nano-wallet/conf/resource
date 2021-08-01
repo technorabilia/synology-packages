@@ -1,0 +1,20 @@
+{
+    "docker": {
+        "services": [
+            {
+                "service": "nano-wallet-docker",
+                "image": "ghcr.io/linuxserver/nano-wallet",
+                "container_name": "sonarr-docker",
+                "tag": "latest",
+                "restart": "always",
+                "ports": [
+                    {
+                        "host_port": "80",
+                        "container_port": "80",
+                        "protocol": "tcp"
+                    }
+                ]
+            }
+        ]
+    }
+}

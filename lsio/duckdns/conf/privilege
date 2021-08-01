@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "duckdns-docker",
+    "groupname": "duckdns-docker"
+}

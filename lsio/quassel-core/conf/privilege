@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "quassel-core-docker",
+    "groupname": "quassel-core-docker"
+}

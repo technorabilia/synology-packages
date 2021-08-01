@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "jenkins-builder-docker",
+    "groupname": "jenkins-builder-docker"
+}

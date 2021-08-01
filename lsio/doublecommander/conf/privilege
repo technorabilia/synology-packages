@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "doublecommander-docker",
+    "groupname": "doublecommander-docker"
+}

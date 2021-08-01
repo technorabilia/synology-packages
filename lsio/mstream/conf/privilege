@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "mstream-docker",
+    "groupname": "mstream-docker"
+}

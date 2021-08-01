@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "docker-compose-docker",
+    "groupname": "docker-compose-docker"
+}

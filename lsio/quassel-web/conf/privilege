@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "quassel-web-docker",
+    "groupname": "quassel-web-docker"
+}

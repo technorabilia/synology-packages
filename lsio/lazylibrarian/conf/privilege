@@ -1,0 +1,8 @@
+{
+    "defaults":
+        {
+            "run-as": "package"
+        },
+    "username": "lazylibrarian-docker",
+    "groupname": "lazylibrarian-docker"
+}

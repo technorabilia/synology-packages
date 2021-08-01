@@ -1,0 +1,98 @@
+{
+    "docker": {
+        "services": [
+            {
+                "service": "diskover-docker",
+                "image": "ghcr.io/linuxserver/diskover",
+                "container_name": "sonarr-docker",
+                "tag": "latest",
+                "restart": "always",
+                "environment": [
+                    {
+                        "env_var": "PUID",
+                        "env_value": "1024"
+                    },
+                    {
+                        "env_var": "PGID",
+                        "env_value": "100"
+                    },
+                    {
+                        "env_var": "TZ",
+                        "env_value": "Europe/Amsterdam"
+                    },
+                    {
+                        "env_var": "REDIS_HOST",
+                        "env_value": "redis"
+                    },
+                    {
+                        "env_var": "REDIS_PORT",
+                        "env_value": "6379"
+                    },
+                    {
+                        "env_var": "ES_HOST",
+                        "env_value": "elasticsearch"
+                    },
+                    {
+                        "env_var": "ES_PORT",
+                        "env_value": "9200"
+                    },
+                    {
+                        "env_var": "ES_USER",
+                        "env_value": "elastic"
+                    },
+                    {
+                        "env_var": "ES_PASS",
+                        "env_value": "changeme"
+                    },
+                    {
+                        "env_var": "INDEX_NAME",
+                        "env_value": "diskover-"
+                    },
+                    {
+                        "env_var": "DISKOVER_OPTS",
+                        "env_value": ""
+                    },
+                    {
+                        "env_var": "WORKER_OPTS",
+                        "env_value": ""
+                    },
+                    {
+                        "env_var": "RUN_ON_START",
+                        "env_value": "true"
+                    },
+                    {
+                        "env_var": "USE_CRON",
+                        "env_value": "true"
+                    }
+                ],
+                "shares": [
+                    {
+                        "host_dir": "config",
+                        "mount_point": "/config"
+                    },
+                    {
+                        "host_dir": "data",
+                        "mount_point": "/data"
+                    }
+                ],
+                "ports": [
+                    {
+                        "host_port": "80",
+                        "container_port": "80",
+                        "protocol": "tcp"
+                    },
+                    {
+                        "host_port": "9181",
+                        "container_port": "9181",
+                        "protocol": "tcp"
+                    },
+                    {
+                        "host_port": "9999",
+                        "container_port": "9999",
+                        "protocol": "tcp"
+                    }
+                ]
+            }
+        ]
+    }
+}
