@@ -20,18 +20,18 @@
                         "env_var": "TZ",
                         "env_value": "Europe/Amsterdam"
                     }
-            ],
+                ],
                 "shares": [
                     {
-                        "host_dir": "/config",
+                        "host_dir": "config",
                         "mount_point": "/config"
                     },
                     {
-                        "host_dir": "/tv",
+                        "host_dir": "tv",
                         "mount_point": "/tv"
                     },
                     {
-                        "host_dir": "/downloads",
+                        "host_dir": "downloads",
                         "mount_point": "/downloads"
                     }
                 ],
