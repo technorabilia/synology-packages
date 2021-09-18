@@ -25,12 +25,12 @@
                         "env_value": "yourdomain.url"
                     },
                     {
-                        "env_var": "SUBDOMAINS",
-                        "env_value": "www,"
-                    },
-                    {
                         "env_var": "VALIDATION",
                         "env_value": "http"
+                    },
+                    {
+                        "env_var": "SUBDOMAINS",
+                        "env_value": "www,"
                     },
                     {
                         "env_var": "CERTPROVIDER",
